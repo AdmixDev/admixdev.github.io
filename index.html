@@ -5,14 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | PorfolioWeb_Project</title>
   </head>
-  <body style="text-align: center; width: 100%; height: 100%;">
+  <body style="text-align: center">
     <canvas id="unity-canvas" width=auto height=auto style="width: 100%; height: 100%; background: #231F20"></canvas>
     <script src="Build/PortfolioWeb.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/PortfolioWeb.data.gz",
-        frameworkUrl: "Build/PortfolioWeb.framework.js.gz",
-        codeUrl: "Build/PortfolioWeb.wasm.gz",
+        dataUrl: "Build/PortfolioWeb.data",
+        frameworkUrl: "Build/PortfolioWeb.framework.js",
+        codeUrl: "Build/PortfolioWeb.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "PorfolioWeb_Project",
